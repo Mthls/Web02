@@ -5,22 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raiz Quadrada</title>
     <script>
-        // Função que calcula a raiz quadrada
+        
         function calcularRaizQuadrada(numero) {
-            var resultado = Math.sqrt(numero); // Usa a função Math.sqrt()
-            document.getElementById("resultado").innerText = "Raiz quadrada de " + numero + " é: " + resultado;
+            var resultado = Math.sqrt(numero);
+            alert("Raiz quadrada de " + numero + " é: " + resultado);
         }
     </script>
 </head>
 <body>
     <h1>Cálculo da Raiz Quadrada</h1>
 
-    <!-- Botões para clicar e calcular -->
+    
     <button onclick="calcularRaizQuadrada(25)">Raiz de 25</button>
     <button onclick="calcularRaizQuadrada(36)">Raiz de 36</button>
     <button onclick="calcularRaizQuadrada(49)">Raiz de 49</button>
-
-    <!-- Exibe o resultado -->
-    <p id="resultado"></p>
 </body>
 </html>
