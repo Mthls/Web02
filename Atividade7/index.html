@@ -12,6 +12,7 @@
   <button onclick="mostrarListaLinguagens()">Criar Array</button> <br><br>
  
   <button onclick="posicaoLinguagens()">Posição no Array</button>
+  <button onclick="limparArrayLinguagens()">Limpar Array</button>
   
   <div id="minhaDiv"></div>
 
@@ -22,6 +23,7 @@
   <button onclick="mostrarListaFrutas()">Criar Array</button> <br><br>
  
   <button onclick="posicaoFrutas()">Posição no Array</button>
+  <button onclick="limparArrayFrutas()">Limpar Array</button>
   
   <div id="minhaDivFrutas"></div>
 </body>
@@ -38,6 +40,7 @@
 
   function mostrarListaLinguagens() {
     const container = document.getElementById("minhaDiv");
+    container.innerHTML = '';  // Limpa a lista antes de exibir novamente
     for (var i = 0; i < linguagens.length; i++) {
       var tag = '<h5>' + i + ' _ ' + linguagens[i] + '</h5>';
       container.innerHTML += tag;
@@ -46,7 +49,19 @@
 
   function posicaoLinguagens() {
     var indice = prompt('Qual posição da lista deseja consultar?');
-    alert(linguagens[indice]);
+    if (indice !== null) {
+      if (indice >= 0 && indice < linguagens.length) {
+        alert(linguagens[indice]);
+      } else {
+        alert('Posição Inválida');
+      }
+    }
+  }
+
+  function limparArrayLinguagens() {
+    linguagens = [];
+    document.getElementById("minhaDiv").innerHTML = '';  // Limpa a lista visível
+    alert('Array de Linguagens Limpo!');
   }
 
   let frutas = [];
@@ -60,6 +75,7 @@
 
   function mostrarListaFrutas() {
     const container = document.getElementById("minhaDivFrutas");
+    container.innerHTML = '';  // Limpa a lista antes de exibir novamente
     for (var i = 0; i < frutas.length; i++) {
       var tag = '<h5>' + i + ' _ ' + frutas[i] + '</h5>';
       container.innerHTML += tag;
@@ -68,7 +84,19 @@
 
   function posicaoFrutas() {
     var indice = prompt('Qual posição da lista deseja consultar?');
-    alert(frutas[indice]);
+    if (indice !== null) {
+      if (indice >= 0 && indice < frutas.length) {
+        alert(frutas[indice]);
+      } else {
+        alert('Posição Inválida');
+      }
+    }
+  }
+
+  function limparArrayFrutas() {
+    frutas = [];
+    document.getElementById("minhaDivFrutas").innerHTML = '';  // Limpa a lista visível
+    alert('Array de Frutas Limpo!');
   }
 </script>
 </html>
