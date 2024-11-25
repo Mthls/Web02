@@ -40,7 +40,7 @@
 
   function mostrarListaLinguagens() {
     const container = document.getElementById("minhaDiv");
-    container.innerHTML = '';  // Limpa a lista antes de exibir novamente
+    container.innerHTML = ''; // Limpa antes de mostrar a lista
     for (var i = 0; i < linguagens.length; i++) {
       var tag = '<h5>' + i + ' _ ' + linguagens[i] + '</h5>';
       container.innerHTML += tag;
@@ -60,8 +60,7 @@
 
   function limparArrayLinguagens() {
     linguagens = [];
-    document.getElementById("minhaDiv").innerHTML = '';  // Limpa a lista visível
-    alert('Array de Linguagens Limpo!');
+    document.getElementById("minhaDiv").innerHTML = ''; // Atualiza visualmente
   }
 
   let frutas = [];
@@ -75,7 +74,7 @@
 
   function mostrarListaFrutas() {
     const container = document.getElementById("minhaDivFrutas");
-    container.innerHTML = '';  // Limpa a lista antes de exibir novamente
+    container.innerHTML = ''; // Limpa antes de mostrar a lista
     for (var i = 0; i < frutas.length; i++) {
       var tag = '<h5>' + i + ' _ ' + frutas[i] + '</h5>';
       container.innerHTML += tag;
@@ -95,8 +94,7 @@
 
   function limparArrayFrutas() {
     frutas = [];
-    document.getElementById("minhaDivFrutas").innerHTML = '';  // Limpa a lista visível
-    alert('Array de Frutas Limpo!');
+    document.getElementById("minhaDivFrutas").innerHTML = ''; // Atualiza visualmente
   }
 </script>
 </html>
