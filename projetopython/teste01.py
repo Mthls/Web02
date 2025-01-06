@@ -7,7 +7,7 @@ if ativ == 1:
     if verificar == 1:
         print("Olá", name, ",Adivinhei sua idade e é:", year)
     else:
-        print("se mata", name, "voce nasceu à:", year, "anos, tem muita idade já, seu velh@.")
+        print("Bom dia senhor ", name, ",voce nasceu à:", year, "anos, e é isso obrigado!.")
 
 else:
     num1 = float(input("Digite um numero: "))
